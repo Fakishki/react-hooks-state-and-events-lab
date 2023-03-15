@@ -8,7 +8,7 @@ function Item({ name, category }) {
   };
 
   return (
-    <li className="">
+    <li className={inCart ? "in-cart" : ""}>
       <span>{name}</span>
       <span className="category">{category}</span>
       <button className="add" onClick={handleCartToggle}>
